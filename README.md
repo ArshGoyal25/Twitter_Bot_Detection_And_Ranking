@@ -2,6 +2,28 @@
 
 Source code for a Twitter Bot Detection and Ranking System.
 
+The Project consisted of two halves
+• Classification of Twitter user accounts as bot or human
+• Ranking of these accounts identified above to indicate their effectiveness/use case
+
+
+Classification:
+The classification step consists of 3 Models based on different feature sets to classify accounts:
+1. Account Level Model - Trained on Account Meta Data
+2. Tweet Level Model - Trained on Tweets made by Account
+3. Sequence Level Model - Based on Account Tweeting History and Patterns
+
+A rule-based algorithm is then used to combine the above results for a final Classification Result
+
+Ranking:
+The Ranking step consists of 3 Models based on different types of content in Tweets:
+1. Spam Detection - To Detect Spam Content in Tweets
+2. Hate Speech Detection - To Detect Hate Space Content in Tweets
+3. Malicious URL Detection - To Detect Malicious URLs in Tweets
+
+A rule-based algorithm is then used to combine the above results for a final Ranking Result
+
+Web Application.
 
 Further, a Web Application was developed to enable a user to view the characteristics of an account along with the Bot Detection and Ranking Result.
 Technologies Used: ReactJS and JavaScript
